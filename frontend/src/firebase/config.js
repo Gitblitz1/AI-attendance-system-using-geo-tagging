@@ -1,0 +1,15 @@
+import { initializeApp } from 'firebase/app'
+import { getAuth, GoogleAuthProvider } from 'firebase/auth'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDVmhTjRw62gxuRE1IdcqSWnPUfsrsW3TM",
+  authDomain: "attendance-system-2e4cf.firebaseapp.com",
+  projectId: "attendance-system-2e4cf",
+  storageBucket: "attendance-system-2e4cf.firebasestorage.app",
+  messagingSenderId: "365563746572",
+  appId: "1:365563746572:web:ab806220c5b333f050d129",
+  measurementId: "G-357QNJ1LCW"
+};
+const app = initializeApp(firebaseConfig)
+export const auth = getAuth(app)
+export const googleProvider = new GoogleAuthProvider()
